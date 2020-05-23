@@ -51,7 +51,7 @@ header {
     background-color: var(--dark-violet);
     color: var(--font-color);
     text-align: center;
-    height: auto;
+    /*height: 900px;*/
 }
 
 header img {
@@ -79,11 +79,22 @@ header img {
 }
 
 .information button {
-    margin: 2rem 0 4rem;
+    margin: 2rem 0 14rem;
     width: 144px;
     height: 49px;
     letter-spacing: 0.1rem;
     background-color: transparent;
     color: var(--font-color);
     border: 1px solid white;
+}
+
+section {
+    margin: 8rem 0 0 0;
+    text-align: center;
+}
+
+section hr{
+    border-top: 1px solid var(--dark-violet);
+    width: 40%;
+    margin: 0 auto;
 }
