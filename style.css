@@ -17,15 +17,16 @@
 }*/
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    width: 100%;
-    font-size: 16px;
+  width: 100%;
+  font-size: 16px;
 }
 
+/*--------nav---------*/
 nav {
   display: flex;
   align-items: center;
@@ -35,66 +36,162 @@ nav {
 }
 
 ul {
-    display: none;
-}
-
-ul li {
-    text-decoration: none;
-    list-style: none;
-}
-
-ul li a{
   display: none;
 }
 
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+ul li a {
+  display: none;
+}
+
+/*--------header---------*/
 header {
-    background-color: var(--dark-violet);
-    color: var(--font-color);
-    text-align: center;
-    /*height: 900px;*/
+  background-color: var(--dark-violet);
+  color: var(--font-color);
+  text-align: center;
+  /*height: 900px;*/
 }
 
 header img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .information {
-    padding: 1rem;
-    background-image: url(./images//bg-pattern-intro-left-mobile.svg), url(./images/bg-pattern-intro-right-mobile.svg);
-    background-repeat: no-repeat;
-    background-position: top left, bottom right;
+  padding: 1rem;
+  background-image: url(./images//bg-pattern-intro-left-mobile.svg),
+    url(./images/bg-pattern-intro-right-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
 }
 
 .information h1 {
-    font-family: var(--font-serif);
-    font-weight: 400;
-    font-size: 40px;
-    padding: 4rem 0 1rem;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 40px;
+  padding: 4rem 0 1rem;
 }
 
 .information p {
-    font-family: var(--font-karla);
-    line-height: 1.5rem;
+  font-family: var(--font-karla);
+  line-height: 1.5rem;
 }
 
 .information button {
-    margin: 2rem 0 14rem;
-    width: 144px;
-    height: 49px;
-    letter-spacing: 0.1rem;
-    background-color: transparent;
-    color: var(--font-color);
-    border: 1px solid white;
+  margin: 2rem 0 14rem;
+  width: 144px;
+  height: 36px;
+  letter-spacing: 0.1rem;
+  background-color: transparent;
+  color: var(--font-color);
+  border: 1px solid white;
 }
 
+/*--------section---------*/
 section {
-    margin: 8rem 0 0 0;
-    text-align: center;
+  margin: 8rem 0 0 0;
+  text-align: center;
 }
 
-section hr{
-    border-top: 1px solid var(--dark-violet);
-    width: 40%;
-    margin: 0 auto;
+section hr {
+  border-top: 1px solid var(--dark-violet);
+  width: 50%;
+  margin: 0 auto;
+}
+
+section h1 {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.card {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.card h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-serif);
+  font-weight: 340;
+}
+
+.card p {
+  color: var(--dark-grayish-violet);
+  margin-bottom: 4rem;
+  font-family: var(--font-karla);
+}
+
+/*--------advertisment---------*/
+.ad {
+  background-color: var(--dark-violet);
+  color: var(--font-color);
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.ad h2 {
+  padding: 3rem 1rem 1rem;
+  font-family: var(--font-serif);
+  font-weight: 340;
+  font-size: 2.5rem;
+}
+
+.ad button {
+  margin: 2rem 0 2rem;
+  width: 144px;
+  height: 36px;
+  letter-spacing: 0.1rem;
+  background-color: transparent;
+  color: var(--font-color);
+  border: 1px solid var(--font-color);
+}
+
+/*--------footer---------*/
+footer {
+  margin-top: 6rem;
+  background-color: var(--very-light-gray);
+  background-image: url(./images/bg-pattern-footer-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid var(--dark-grayish-violet);
+  margin: 2rem auto 2rem;
+  width: 90%;
+}
+
+.social-media img {
+    margin-top: 5rem;
+}
+
+.social-media a img{
+    margin: 1.5rem 0.2rem 2.5rem;
+}
+
+footer h3, p{
+    text-align: center;
+    font-family: var(--font-karla);
+}
+
+footer h3 {
+    margin: 2rem;
+    color: var(--dark-grayish-violet);
+}
+
+footer p {
+    margin: 0.6rem;
+    font-weight: 600;
 }
