@@ -45,4 +45,38 @@ window.onload = function () {
       true
     );
   }
+
+  function myFunction(imageIntro) {
+    if (imageIntro.matches) {
+      // If media query matches
+      imageIntroDesktop.style.position = "absolute";
+      var x = 0;
+      imageIntroDesktop.innerHTML =
+        "<img src=" +
+        " " +
+        "./images/image-intro-desktop.jpg" +
+        " " +
+        "width=" +
+        " " +
+        "100%" +
+        " " +
+        "height=" +
+        " " +
+        "auto" +
+        " " +
+        " alt=" +
+        " " +
+        "family" +
+        ">";
+      console.log(x);
+    } else {
+      imageIntroDesktop.style.position = "relative";
+      imageIntroDesktop.innerHTML = "";
+    }
+  }
+
+  var imageIntroDesktop = document.querySelector(".family-intro");
+  var imageIntro = window.matchMedia("(min-width: 768px)");
+  myFunction(imageIntro); // Call listener function at run time
+  imageIntro.addListener(myFunction); // Attach listener function on state changes
 };
