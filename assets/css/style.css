@@ -154,7 +154,7 @@ section {
 }
 
 section hr {
-  border-top: 1px solid var(--dark-violet);
+  border-top: 1px solid var(--very-light-gray);
   width: 50%;
   margin: 0 auto;
 }
@@ -487,4 +487,89 @@ footer p {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  /*-------header-------*/
+  .family-intro {
+    width: 35%;
+    right: 8%;
+  }
+}
+
+/* 1440px and up */
+@media only screen and (min-width: 1440px) {
+  /*-------nav-------*/
+  nav {
+    width: 1440px;
+    margin: 1rem auto;
+  }
+
+  /*-------header-------*/
+  header {
+    height: 650px;
+    background-size: 22%;
+  }
+
+  header span {
+    width: 1440px;
+    margin: 1rem auto;
+  }
+
+  .family-intro {
+    width: 30%;
+    top: 15%;
+    right: 13%;
+  }
+
+  .information {
+    padding: 0;
+    margin-left: 0;
+    background-image: none;
+    width: 40%;
+  }
+
+  .information h1 {
+    margin: 0rem 0 1rem;
+    padding: 1rem 0 0;
+    font-size: 4rem;
+  }
+
+  .information hr {
+    margin: 3rem 0 1rem;
+    width: 25%;
+  }
+
+  .intro__backgrounds {
+    background-image: url(/images/bg-pattern-intro-left-desktop.svg);
+    background-position: left;
+    background-size: 10%;
+    position: absolute;
+    height: 640px;
+    top: 45%;
+  }
+
+  /*--------section---------*/
+  section {
+    margin: 20rem auto 6rem;
+    width: 1440px;
+  }
+
+  /*--------advertisment---------*/
+  .ad {
+    margin: 4rem auto 12rem;
+    width: 1440px;
+  }
+
+  /*--------footer---------*/
+  footer {
+    padding: 0 0 4rem;
+  }
+
+  .social-media {
+    margin: 0 auto;
+    width: 1440px;
+  }
+
+  .footer-span {
+    margin: 0 auto;
+    width: 1440px;
+  }
 }
