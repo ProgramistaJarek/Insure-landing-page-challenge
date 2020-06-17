@@ -64,10 +64,12 @@ nav {
 
 ul li {
   text-transform: uppercase;
-  font-size: 20px;
-  padding: 1rem 0;
+  font-size: 22px;
   font-family: var(--font-karla);
+  font-weight: 600;
   height: calc(55px - 32px);
+  padding: 1.2rem 0;
+  margin: 0 1.5rem;
 }
 
 /*ul li:hover {
@@ -76,10 +78,9 @@ ul li {
   padding: calc(1rem - 1px) 0;
 }*/
 
-.liHover {
-  border: 1px solid white;
-  margin: 0 20px;
-  padding: calc(1rem - 1px) 0;
+ul li:last-child {
+  border: 2px solid var(--font-color);
+  color: var(--font-color);
 }
 
 ul li a {
@@ -237,6 +238,10 @@ footer {
   margin: 1.5rem 0.2rem 2.5rem;
 }
 
+.social-media a:hover path {
+  fill: #000000;
+}
+
 footer h3,
 footer p {
   text-align: center;
@@ -251,6 +256,11 @@ footer h3 {
 footer p {
   margin: 0.6rem;
   font-weight: 600;
+}
+
+footer p span:hover {
+  border-bottom: 1px solid black;
+  cursor: pointer;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -284,6 +294,7 @@ footer p {
   /*-------nav-------*/
   nav {
     flex-direction: row;
+    padding: 0.5rem 0;
   }
 
   .menu-img {
@@ -302,12 +313,27 @@ footer p {
     top: 0;
   }
 
-  ul li {
-    padding: 0 1rem;
+  ul li:last-child a {
+    border: 1px solid var(--very-dark-violet);
+    color: var(--very-dark-violet);
+    padding: 0.5rem 1rem;
+  }
+
+  ul li:last-child a:hover {
+    background-color: var(--very-dark-violet);
+    color: var(--font-color);
+    cursor: pointer;
   }
 
   ul li a {
     color: var(--dark-grayish-violet);
+    padding: 0.5rem 1rem;
+    margin: 6rem 0;
+  }
+
+  ul li a:hover {
+    color: var(--dark-violet);
+    cursor: pointer;
   }
 
   /*-------header-------*/
@@ -322,6 +348,10 @@ footer p {
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 35%;
+  }
+
+  header span {
+    z-index: 1;
   }
 
   .family-intro {
@@ -351,6 +381,17 @@ footer p {
     border-color: var(--dark-grayish-violet);
   }
 
+  .information button {
+    height: 44px;
+    font-size: 1rem;
+  }
+
+  .information button:hover {
+    color: var(--dark-violet);
+    background-color: var(--font-color);
+    cursor: pointer;
+  }
+
   .intro__backgrounds {
     background-image: url(/images/bg-pattern-intro-left-desktop.svg);
     background-position: left;
@@ -358,6 +399,18 @@ footer p {
     position: absolute;
     height: 640px;
     top: 50%;
+  }
+  
+/*--------advertisment---------*/
+  .ad button {
+    height: 44px;
+    font-size: 1rem;
+  }
+
+  .ad button:hover {
+    color: var(--dark-violet);
+    background-color: var(--font-color);
+    cursor: pointer;
   }
 
   /*--------footer---------*/
@@ -375,7 +428,7 @@ footer p {
     margin: 3rem 0;
   }
 
-  .social-media a img {
+  .social-media a {
     margin: 3rem 0.2rem 3rem;
   }
 
@@ -405,6 +458,9 @@ footer p {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   /*-------header-------*/
+  header {
+    background-size: 25%;
+  }
   .family-intro {
     width: 40%;
     top: 15%;
@@ -487,10 +543,18 @@ footer p {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  /*-------nav-------
+  ul li:hover {
+    border: 1px solid var(--dark-violet);
+    padding: 1rem;
+  }*/
   /*-------header-------*/
   .family-intro {
     width: 35%;
     right: 8%;
+  }
+  .information {
+    margin-bottom: 5rem;
   }
 }
 
@@ -522,6 +586,7 @@ footer p {
   .information {
     padding: 0;
     margin-left: 0;
+    margin-bottom: 100rem;
     background-image: none;
     width: 40%;
   }

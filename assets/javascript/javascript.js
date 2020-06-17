@@ -13,7 +13,7 @@ window.onload = function () {
     }
   });
   var liHover =
-    "ul li:hover {border: 1px solid white;margin: 0 20px;padding: calc(1rem - 1px) 0;}";
+    "ul li a:hover { color: var(--dark-violet); ursor: pointer; }";
 
   for (var i = 0; i < menu.length; i++) {
     menu[i].addEventListener(
@@ -30,7 +30,7 @@ window.onload = function () {
       },
       true
     );
-    menu[i].addEventListener(
+    /*menu[i].addEventListener(
       "mouseenter",
       function () {
         this.classList.add("liHover");
@@ -43,7 +43,7 @@ window.onload = function () {
         this.classList.remove("liHover");
       },
       true
-    );
+    );*/
   }
 
   function myFunction(imageIntro) {
@@ -79,4 +79,5 @@ window.onload = function () {
   var imageIntro = window.matchMedia("(min-width: 768px)");
   myFunction(imageIntro); // Call listener function at run time
   imageIntro.addListener(myFunction); // Attach listener function on state changes
+
 };
